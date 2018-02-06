@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cxD-PB-5QZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n3o-c0-Hpr"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Tj-gb-d9A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hze-Wz-0gv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hze-Wz-0gv" firstAttribute="top" secondItem="n3o-c0-Hpr" secondAttribute="bottom" id="PfD-TD-JpK"/>
+                            <constraint firstItem="hze-Wz-0gv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j8X-pA-czX"/>
+                            <constraint firstAttribute="trailing" secondItem="hze-Wz-0gv" secondAttribute="trailing" id="kin-fF-hU6"/>
+                            <constraint firstItem="2Tj-gb-d9A" firstAttribute="top" secondItem="hze-Wz-0gv" secondAttribute="bottom" id="peR-0U-9E6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FUw-lH-2Zn"/>
+                    <connections>
+                        <outlet property="webView" destination="hze-Wz-0gv" id="jg4-nZ-D01"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="-130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GzN-QK-YdK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cxD-PB-5QZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ANZ-os-5mH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="237-6e-J5D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ds3-wG-RsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-322" y="224"/>
+        </scene>
+    </scenes>
+</document>

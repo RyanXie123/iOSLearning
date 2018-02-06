@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="text" id="email">
+<button onclick="btnClicked()">点击</button>
+
+<a href="javascript:void(0);" class="sharebtn" onclick="share()">分享活动，领30元红包</a>
+<a href="darkangel://smsLogin?username=12323123&code=892845">短信验证登录</a>
+</body>
+
+<script>
+
+    function btnClicked() {
+        var input = document.getElementById('email');
+        console.log(input.value);
+    }
+
+
+    function share() {
+        share2({title: "title",
+               imgUrl: "http://img.dd.com/xxx.png",
+               result: function(res) {
+               alert(res ? "success" : "failure");
+               }})
+
+    }
+
+
+function share2(shareData){
+    alert('abc');
+}
+
+
+
+
+
+</script>
+</html>
